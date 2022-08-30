@@ -20,11 +20,75 @@
     <menuitem id="hotel_res_menu"
         name="Reservation"
         parent="hotel_root"
-        sequence="2"/>
+        sequence="2"
+        action="client_action"/>
 
-    <menuitem id="client_menu"
-    name="client"
-    parent="hotel_res_menu"
-    sequence="2"
-    action="client_action"/>
+
+
+    <record id="folio_action" model="ir.actions.act_window">
+        
+    </record>
+    <menuitem id="hotel_all_folio"
+        name="All Folio"
+        parent="hotel_root"
+        sequence="3"
+        action="folio_action"
+        />
+
+    
+    <menuitem id="hotel_restaurant"
+        name="Restaurant"
+        parent="hotel_root"
+        sequence="4"
+        action="folio_action"
+        />
+
+    
+    <menuitem id="hotel_house_keeping"
+        name="Housekeeping"
+        parent="hotel_root"
+        sequence="5"
+        action="folio_action"
+        />
+
+
+
+
+    <record id="hotel_report_actionn" model="ir.actions.act_window">
+
+    </record>
+    <menuitem id="hotel_report"
+        name="Reports"
+        parent="hotel_root"
+        sequence="6"
+        action="hotel_report_actionn"
+        />
+
+
+
+    <menuitem id="hotel_agent_commission"
+        name="Agent Commission"
+        parent="hotel_root"
+        sequence="7"
+        action="folio_action"
+        />
+
+
+    <menuitem id="hotel_configuration"
+        name="Configuration"
+        parent="hotel_root"
+        sequence="8"
+        />
+
+    <menuitem id="hotel_configuration_1"
+        name="Configuration"
+        parent="hotel_configuration"
+        sequence="1"
+        />
+    <menuitem id="hotel_configuration_2"
+        name="Configuration"
+        parent="hotel_configuration_1"
+        sequence="8"
+        action="folio_action"
+        />
 </odoo>

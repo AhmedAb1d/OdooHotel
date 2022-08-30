@@ -13,3 +13,16 @@ class HotelClient(models.Model):
         ('other', 'Other'),
     ], required=True, default='male')
     note = fields.Text(string='Description')
+
+class Report(models.Model):
+    _name = "hotel.report"
+    _description = "Hotel Report"
+
+    name = fields.Char(string='Name', required=True)
+    age=fields.Integer(string='Age')
+    gender = fields.Selection([
+        ('male', 'Male'),
+        ('female', 'Female'),
+        ('other', 'Other'),
+    ], required=True, default='male')
+    note = fields.Text(string='Description')
