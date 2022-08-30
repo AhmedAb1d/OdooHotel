@@ -8,7 +8,7 @@
     'website': 'this is a website',
     'depends' : [],
     'data': [
-        'views/client.xml',
+        'views/views.xml',
         'security/ir.model.access.csv'
     ],
     'demo': [

@@ -1,1 +1,1 @@
-from . import client,report
+from . import client,report,restaurant,housekeeping,agent

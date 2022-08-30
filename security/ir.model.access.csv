@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_hotel_client,access.hotel.client,model_hotel_client,,1,1,1,1
+access_hotel_restaurant,access.hotel.restaurant,model_hotel_restaurant,,1,1,1,1
+access_hotel_housekeeping,access.hotel.housekeeping,model_hotel_housekeeping,,1,1,1,1
+access_hotel_agent,access.hotel.agent,model_hotel_agent,,1,1,1,1
+access_hotel_report,access.hotel.report,model_hotel_report,,1,1,1,1

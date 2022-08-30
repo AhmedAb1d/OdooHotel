@@ -2,7 +2,7 @@ from odoo import api, fields, models
 
 
 class HotelClient(models.Model):
-    _name = "hotel.client"
+    _name = "hotel.agent"
     _description = "Hotel client"
 
     name = fields.Char(string='Name', required=True)
@@ -12,4 +12,5 @@ class HotelClient(models.Model):
         ('female', 'Female'),
         ('other', 'Other'),
     ], required=True, default='male')
-    note = fields.Text(string='Description')
+    task = fields.Text(string='Task')
+    note = fields.Text(string='Additional info about this agent')
